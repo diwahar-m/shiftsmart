@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Routes from "./routes";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
+import '@fontsource/poppins'
 
 function App() {
   const queryClient = new QueryClient();
