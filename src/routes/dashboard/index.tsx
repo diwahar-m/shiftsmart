@@ -1,4 +1,4 @@
-import AppLoadSuspense from "../../components/custom/AppLoadSuspense.js";
+import AppLoadSuspense from "../../components/mui/AppLoadSuspense/index.js";
 import { Dashboard_Page } from "./url.js";
 import { lazy } from "react";
 
@@ -6,6 +6,7 @@ const DashboardPage = AppLoadSuspense(lazy(() => import('../../pages/dashboard/i
 
 
 const DashboardRoutes = {
+
       path: Dashboard_Page,
       element: <DashboardPage />,
    
