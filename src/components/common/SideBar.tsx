@@ -7,7 +7,7 @@ import AppText from '../mui/AppText'
 export default function SideBar() {
   return (
     
-        <AppBox sx={{height:'100vh', maxWidth: "240px", padding: '16px', display: 'flex', flexDirection: 'column', gap:'32px',border: '1px solid #CBD5E1', borderTopWidth: 0, borderLeftWidth: 0, borderBottomWidth: 0}}>
+        <AppBox sx={{height:'100vh', maxWidth: '270px', padding: '16px', display: 'flex', flexDirection: 'column', gap:'32px',border: '1px solid #CBD5E1', borderTopWidth: 0, borderLeftWidth: 0, borderBottomWidth: 0}}>
 
         {/* Logo container */}
         <AppBox sx={{ borderColor: '#CBD5E1', borderWidth: '5px'}}>

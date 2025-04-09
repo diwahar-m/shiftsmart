@@ -1,4 +1,4 @@
-import { Tooltip, Typography, TypographyVariant } from "@mui/material";
+import { SxProps, Tooltip, Typography, TypographyVariant } from "@mui/material";
 import { ReactNode } from "react";
 
 
@@ -6,7 +6,7 @@ interface AppTextProps {
   text: string;
   children?: ReactNode;
   variant?: TypographyVariant;
-  sx?: object;
+  sx?: SxProps;
   tooltipText?: string;
   rest?: object
 
@@ -29,7 +29,7 @@ const AppText = ({
       {...rest}
     >
       <Tooltip title={tooltipText}>
-        <span> {text || children}</span>
+        <span style={{whiteSpace:'nowrap'}}> {text || children}</span>
       </Tooltip>
     </Typography>
   );
